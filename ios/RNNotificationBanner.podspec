@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/author/RNNotificationBanner.git", :tag => "master" }
   s.source_files  = "RNNotificationBanner/**/*.{h,m}"
   s.requires_arc = true
+  s.swift_version = "4.2"
 
 
   s.dependency "React"
