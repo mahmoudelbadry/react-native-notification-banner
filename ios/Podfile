@@ -6,13 +6,13 @@ target 'RNNotificationBanner' do
   use_frameworks!
 
   # Pods for RNNotificationBanner
-  pod 'BRYXBanner', :git => 'https://github.com/prscX/BRYXBanner.git'
+  pod 'BRYXBanner', :git => 'https://github.com/prscX/BRYXBanner.git', :commit => '1ce211cd69f9c7204c86d8316ab620856af51756'
 
   post_install do |installer|
     installer.pods_project.targets.each do |target|
       if target.name.include?('BRYXBanner')
         target.build_configurations.each do |config|
-          config.build_settings['SWIFT_VERSION'] = '4.1'
+          config.build_settings['SWIFT_VERSION'] = '4.2'
         end
       end
     end
