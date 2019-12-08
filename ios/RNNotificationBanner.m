@@ -56,7 +56,7 @@ RCT_EXPORT_METHOD(Show:(NSDictionary *)props onClick:(RCTResponseSenderBlock)onC
     //        style.titleFont = [UIFont systemFontOfSize: [titleSize intValue]];
     //    }
     
-    Banner *banner = [[Banner alloc] initWithTitle:title subtitle:subTitle image:drawable backgroundColor:tintColor didTapBlock:nil];
+    Banner *banner = [[Banner alloc] initWithTitle:title subtitle:subTitle image:drawable enableProgress:false backgroundColor:tintColor didTapBlock:nil];
     
     if (titleColor != nil) {
         banner.titleLabel.textColor = titleColor;
